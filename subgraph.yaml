@@ -1,0 +1,44 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: FrogFund
+    network: linea-sepolia
+    source:
+      address: "0xa323d15b9fe90c2d0f570635b07d03e0d25c75c1"
+      abi: FrogFund
+      startBlock: 1755998
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - FundsDistributed
+        - OwnershipTransferred
+        - ProgressReviewed
+        - ProgressUpdated
+        - ProjectCreated
+        - ProjectFunded
+        - RefundIssued
+      abis:
+        - name: FrogFund
+          file: ./abis/FrogFund.json
+      eventHandlers:
+        - event: FundsDistributed(indexed uint256,uint256,bool)
+          handler: handleFundsDistributed
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: ProgressReviewed(indexed uint256,string,bool)
+          handler: handleProgressReviewed
+        - event: ProgressUpdated(indexed uint256,uint256,string)
+          handler: handleProgressUpdated
+        - event: ProjectCreated(indexed uint256,indexed address,uint256,uint256)
+          handler: handleProjectCreated
+        - event: ProjectFunded(indexed uint256,indexed address,uint256,bool)
+          handler: handleProjectFunded
+        - event: RefundIssued(indexed uint256,indexed address,uint256,bool)
+          handler: handleRefundIssued
+      file: ./src/frog-fund.ts
