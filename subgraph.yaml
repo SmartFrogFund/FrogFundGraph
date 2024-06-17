@@ -8,9 +8,9 @@ dataSources:
     name: FrogFund
     network: linea-sepolia
     source:
-      address: "0xa323d15b9fe90c2d0f570635b07d03e0d25c75c1"
+      address: "0xcef6df73404baeccdaa5986615233b0e7e442e2d"
       abi: FrogFund
-      startBlock: 1755998
+      startBlock: 1756381
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -35,7 +35,7 @@ dataSources:
           handler: handleProgressReviewed
         - event: ProgressUpdated(indexed uint256,uint256,string)
           handler: handleProgressUpdated
-        - event: ProjectCreated(indexed uint256,indexed address,uint256,uint256)
+        - event: ProjectCreated(indexed uint256,indexed address,string,string,uint256,uint256)
           handler: handleProjectCreated
         - event: ProjectFunded(indexed uint256,indexed address,uint256,bool)
           handler: handleProjectFunded

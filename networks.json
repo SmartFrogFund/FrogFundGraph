@@ -1,8 +1,8 @@
 {
   "linea-sepolia": {
     "FrogFund": {
-      "address": "0xa323d15b9fe90c2d0f570635b07d03e0d25c75c1",
-      "startBlock": 1755998
+      "address": "0xcef6df73404baeccdaa5986615233b0e7e442e2d",
+      "startBlock": 1756381
     }
   }
 }

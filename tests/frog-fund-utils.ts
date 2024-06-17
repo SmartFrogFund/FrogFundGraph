@@ -114,6 +114,8 @@ export function createProgressUpdatedEvent(
 export function createProjectCreatedEvent(
   projectId: BigInt,
   creator: Address,
+  _description: string,
+  _link: string,
   goalAmount: BigInt,
   deadline: BigInt
 ): ProjectCreated {
@@ -129,6 +131,15 @@ export function createProjectCreatedEvent(
   )
   projectCreatedEvent.parameters.push(
     new ethereum.EventParam("creator", ethereum.Value.fromAddress(creator))
+  )
+  projectCreatedEvent.parameters.push(
+    new ethereum.EventParam(
+      "_description",
+      ethereum.Value.fromString(_description)
+    )
+  )
+  projectCreatedEvent.parameters.push(
+    new ethereum.EventParam("_link", ethereum.Value.fromString(_link))
   )
   projectCreatedEvent.parameters.push(
     new ethereum.EventParam(
