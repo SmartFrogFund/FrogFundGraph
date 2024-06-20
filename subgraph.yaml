@@ -6,11 +6,11 @@ schema:
 dataSources:
   - kind: ethereum
     name: FrogFund
-    network: linea-sepolia
+    network: localhost
     source:
-      address: "0xcef6df73404baeccdaa5986615233b0e7e442e2d"
+      address: "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
       abi: FrogFund
-      startBlock: 1756381
+      startBlock: 3
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
