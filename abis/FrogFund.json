@@ -143,6 +143,12 @@
       },
       {
         "indexed": false,
+        "internalType": "string",
+        "name": "_title",
+        "type": "string"
+      },
+      {
+        "indexed": false,
         "internalType": "uint256",
         "name": "goalAmount",
         "type": "uint256"

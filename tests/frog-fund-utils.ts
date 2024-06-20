@@ -116,6 +116,7 @@ export function createProjectCreatedEvent(
   creator: Address,
   _description: string,
   _link: string,
+  _title: string,
   goalAmount: BigInt,
   deadline: BigInt
 ): ProjectCreated {
@@ -140,6 +141,9 @@ export function createProjectCreatedEvent(
   )
   projectCreatedEvent.parameters.push(
     new ethereum.EventParam("_link", ethereum.Value.fromString(_link))
+  )
+  projectCreatedEvent.parameters.push(
+    new ethereum.EventParam("_title", ethereum.Value.fromString(_title))
   )
   projectCreatedEvent.parameters.push(
     new ethereum.EventParam(

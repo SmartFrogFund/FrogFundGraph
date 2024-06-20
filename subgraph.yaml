@@ -35,7 +35,7 @@ dataSources:
           handler: handleProgressReviewed
         - event: ProgressUpdated(indexed uint256,uint256,string)
           handler: handleProgressUpdated
-        - event: ProjectCreated(indexed uint256,indexed address,string,string,uint256,uint256)
+        - event: ProjectCreated(indexed uint256,indexed address,string,string,string,uint256,uint256)
           handler: handleProjectCreated
         - event: ProjectFunded(indexed uint256,indexed address,uint256,bool)
           handler: handleProjectFunded

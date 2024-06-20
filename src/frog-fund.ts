@@ -86,6 +86,7 @@ export function handleProjectCreated(event: ProjectCreatedEvent): void {
   entity.creator = event.params.creator
   entity._description = event.params._description
   entity._link = event.params._link
+  entity._title = event.params._title
   entity.goalAmount = event.params.goalAmount
   entity.deadline = event.params.deadline
 

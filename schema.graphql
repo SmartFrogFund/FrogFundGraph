@@ -43,6 +43,7 @@ type ProjectCreated @entity(immutable: true) {
   creator: Bytes! # address
   _description: String! # string
   _link: String! # string
+  _title: String! # string
   goalAmount: BigInt! # uint256
   deadline: BigInt! # uint256
   blockNumber: BigInt!
