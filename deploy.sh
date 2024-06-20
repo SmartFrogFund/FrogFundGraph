@@ -27,14 +27,14 @@ codegen_and_build() {
 # 创建子图
 create_subgraph() {
   echo "Creating subgraph..."
-  npx graph create --node http://42.192.203.239:8020/ frogfund
+  npx graph create --node http://localhost:8020/ frogfund
 }
 
 # 部署子图到本地
 deploy_subgraph() {
   version=$(cat version.txt)
   echo "Deploying subgraph with version: $version"
-  npx graph deploy --node http://42.192.203.239:8020/ --ipfs https://ipfs.network.thegraph.com/ frogfund --version-label "$version"
+  npx graph deploy --node http://localhost:8020/ --ipfs https://localhost:5001/ frogfund --version-label "$version"
 }
 
 # 执行步骤
