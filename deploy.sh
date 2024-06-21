@@ -34,7 +34,7 @@ create_subgraph() {
 deploy_subgraph() {
   version=$(cat version.txt)
   echo "Deploying subgraph with version: $version"
-  npx graph deploy --node http://localhost:8020/ --ipfs https://ipfs.network.thegraph.com/ frogfund --version-label "$version"
+  npx graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 frogfund --version-label "$version"
 }
 
 # 执行步骤
