@@ -31,7 +31,7 @@ dataSources:
           handler: handleFundsDistributed
         - event: OwnershipTransferred(indexed address,indexed address)
           handler: handleOwnershipTransferred
-        - event: ProgressReviewed(indexed uint256,string,bool)
+        - event: ProgressReviewed(indexed uint256,string,bool,uint256)
           handler: handleProgressReviewed
         - event: ProgressUpdated(indexed uint256,uint256,string)
           handler: handleProgressUpdated
