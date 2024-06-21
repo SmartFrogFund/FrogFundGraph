@@ -4,7 +4,7 @@
     "scripts": {
         "codegen": "graph codegen",
         "build": "graph build",
-        "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ frogfund",
+         "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ frogfund",
         "create-local": "graph create --node http://42.192.203.239:8020/ frogfund",
         "remove-local": "graph remove --node http://42.192.203.239:8020/ frogfund",
         "deploy-local": "graph deploy --node http://42.192.203.239:8020/ --ipfs https://ipfs.network.thegraph.com/ frogfund --version-label $(cat version.txt)",
