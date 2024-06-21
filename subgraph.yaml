@@ -8,7 +8,7 @@ dataSources:
     name: FrogFund
     network: linea-sepolia
     source:
-      address: "0x9f255D4c9C5BbE6C274d290cB764Cb1e2DbbD434"
+      address: "0xd515588BB7434479329F53BC4580B5D0965b5E5D"
       abi: FrogFund
       startBlock: 1776364
     mapping:
@@ -31,7 +31,7 @@ dataSources:
           handler: handleFundsDistributed
         - event: OwnershipTransferred(indexed address,indexed address)
           handler: handleOwnershipTransferred
-        - event: ProgressReviewed(indexed uint256,string,bool)
+        - event: ProgressReviewed(indexed uint256,string,bool,uint256)
           handler: handleProgressReviewed
         - event: ProgressUpdated(indexed uint256,uint256,string)
           handler: handleProgressUpdated
