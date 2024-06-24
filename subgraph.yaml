@@ -8,7 +8,7 @@ dataSources:
     name: FrogFund
     network: linea-sepolia
     source:
-      address: "0xdf0234981D3bB5140D173aFBeBB92C1a5524E4db"
+      address: "0x0472100c8B4fC47625789935D1A3C899B45Db04F"
       abi: FrogFund
       startBlock: 1776364
     mapping:
