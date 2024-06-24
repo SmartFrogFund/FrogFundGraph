@@ -56,6 +56,7 @@ export function handleProgressReviewed(event: ProgressReviewedEvent): void {
   entity.comment = event.params.comment
   entity.approved = event.params.approved
   entity.currentProgress = event.params.currentProgress
+  entity.Investor = event.params.Investor
   entity.blockNumber = event.block.number
   entity.blockTimestamp = event.block.timestamp
   entity.transactionHash = event.transaction.hash

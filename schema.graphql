@@ -23,6 +23,7 @@ type ProgressReviewed @entity(immutable: true) {
   comment: String! # string
   approved: Boolean! # bool
   currentProgress: BigInt! # uint256
+  Investor: Bytes! # uint256
   blockNumber: BigInt!
   blockTimestamp: BigInt!
   transactionHash: Bytes!
