@@ -8,9 +8,9 @@ dataSources:
     name: FrogFund
     network: linea-sepolia
     source:
-      address: "0x0472100c8B4fC47625789935D1A3C899B45Db04F"
+      address: "0x8A322F03CdCA4F2bBf12C32d81Da46e45eC29A65"
       abi: FrogFund
-      startBlock: 1776364
+      startBlock: 2034290
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
